@@ -10,13 +10,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
        for (x in 1..100) {
-           if(x % 3 == 0 && x % 5 == 0){
+           if(x % 3 == 0 && x % 5 == 0){ /** first verify if number is multiple of 3 and 5 */
                println("FizzBuzz")
-           }else if(x % 3 == 0) {
+           }else if(x % 3 == 0) { /** if not, verify if number is only of 3 */
                println("Fizz")
-           }else if(x % 5 == 0) {
+           }else if(x % 5 == 0) { /** if not, verify if number is only multiple of 5  */
                println("Buzz")
-           }else {
+           }else {  /** in the end, print the number */
                println(x)
            }
        }
